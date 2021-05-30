@@ -1,0 +1,23 @@
+.watch {
+  font-family: $font-roboto;
+  font-size: 16px;
+  font-weight: 900;
+  padding-top: 200px;
+  padding-bottom: 205px;
+
+  .watch__play {
+    width: 100px;
+    display: block;
+  }
+
+  .watch__icon {
+    fill:none;
+    stroke:#FFFFFF;
+    stroke-width:3;
+    stroke-miterlimit:10;
+  }
+
+  .watch__icon:hover {
+    stroke: $color-ocean;
+  }
+}
