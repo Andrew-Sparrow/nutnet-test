@@ -1,32 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tajam Agency</title>
-    <link rel="stylesheet" href="css/style.min.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.min.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Roboto:wght@100;300;400;900&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
   </head>
   <body>
-    <header class="bg bg--header">
-      <div class="logo">
-        <img src="" alt="">
-        <p class="logo__name">tajam</p>
+    <header class="bg bg--header container-fluid px-0">
+      <div class="container gx-2">
+        <div class="top row justify-content-between pt-3">
+          <div class="col-2 logo">
+            <div class="row">
+              <div class="col">
+                <img src="img/logo.png" alt="logo" aria-label="logo">
+              </div>
+              <div class="col">
+                <p class="logo__name">tajam</p>
+              </div>
+            </div>
+          </div>
+          <nav class="menu col-7">
+            <div class="row menu-nav">
+              <div class="col d-flex flex-md-row justify-content-between">
+                <a class="menu-nav__item menu-nav__item--active" href="#">home</a>
+                <a class="menu-nav__item" href="#">about</a>
+                <a class="menu-nav__item" href="#">expertise</a>
+                <a class="menu-nav__item" href="#">teams</a>
+                <a class="menu-nav__item" href="#">works</a>
+                <a class="menu-nav__item" href="#">people say</a>
+                <a class="menu-nav__item" href="#">contact</a>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class="row text-center">
+          <div class="col-10 mx-auto">
+            <h1 class="moto text-center mb-5">We Are Awesome Creative Agency</h1>
+            <p class="description fw-light mb-5">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
+            <button type="button" class="more btn btn-lg btn-secondary">learn more</button>
+          </div>
+        </div>
       </div>
-      <nav class="menu">
-        <ul class="menu-nav">
-          <li class="menu-nav__item">home</li>
-          <li class="menu-nav__item">about</li>
-          <li class="menu-nav__item">expertise</li>
-          <li class="menu-nav__item">teams</li>
-          <li class="menu-nav__item">works</li>
-          <li class="menu-nav__item">people say</li>
-          <li class="menu-nav__item">contact</li>
-        </ul>
-      </nav>
-      <h1 class="moto">We Are Awesome Creative Agency</h1>
-      <p class="description">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
-      <button class="more">learn more</button>
     </header>
     <section id="solid">
       <div class="story">

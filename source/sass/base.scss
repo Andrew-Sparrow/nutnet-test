@@ -1,0 +1,19 @@
+html {
+  font-size: 20px;
+}
+
+body {
+  //verify new changes
+  min-width: 300px;
+  font-family: $font-playfair;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.row {
+  --bs-gutter-x: 1rem;
+}

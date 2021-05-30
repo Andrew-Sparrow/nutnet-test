@@ -1,0 +1,12 @@
+.menu-nav__item {
+  font-family: $font-roboto;
+  font-size: 13px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: $color-white;
+}
+
+.menu-nav__item--active {
+  color: $color-ocean;
+}

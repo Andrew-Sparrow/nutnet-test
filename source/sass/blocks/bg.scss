@@ -1,0 +1,9 @@
+@import 'config';
+
+.bg--header {
+  background-image: url("../img/bg-forest.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: $color-white;
+  padding-bottom: 205px;
+}

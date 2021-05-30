@@ -1,0 +1,10 @@
+.logo {
+  font-family: $font-roboto;
+
+  .logo__name {
+    font-weight: 100;
+    color: $color-logo;
+    font-size: 30px;
+    line-height: 1.2;
+  }
+}
