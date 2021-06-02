@@ -1,15 +1,22 @@
 @import 'config';
 
-.bg--header {
-  background-image: url("../img/bg-forest.jpg");
+.bg--header,
+.bg--watch,
+.bg--team {
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.bg--header {
+  background-image: url("../img/bg-forest.jpg");
   color: $color-white;
   padding-bottom: 205px;
 }
 
 .bg--watch {
   background-image: url("../img/bg-city.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+}
+
+.bg--team {
+  background-image: url("../img/bg-forest-2.jpg");
 }

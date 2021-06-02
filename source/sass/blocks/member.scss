@@ -1,0 +1,19 @@
+.member__body {
+  border-bottom: 1px solid $color-grey;
+}
+
+.member__name {
+  font-family: $font-roboto;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.member__position {
+  font-family: $font-roboto;
+  color: $color-grey;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
