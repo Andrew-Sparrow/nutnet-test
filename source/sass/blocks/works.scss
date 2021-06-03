@@ -1,0 +1,22 @@
+.works__projects {
+  display: flex;
+  width: 187px;
+  justify-content: space-between;
+  text-decoration: none;
+  font-size: 14px;
+  color: #413d4b;
+  font-family: $font-roboto;
+}
+
+.works__title {
+  align-self: center;
+}
+
+.works__text {
+  margin-bottom: 0;
+  align-self: center;
+}
+
+.works__icon {
+  align-self: center;
+}
