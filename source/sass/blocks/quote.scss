@@ -1,0 +1,41 @@
+.quote__sign {
+  font-size: 100px;
+  font-family: $font-playfair;
+  padding-bottom: 0;
+}
+
+.quote__text {
+  font-size: 16px;
+  line-height: 26px;
+  margin-top: -50px;
+  margin-bottom: 70px;
+  letter-spacing: 1.0px;
+  color: rgba(250, 250, 250, 0.9);
+}
+
+.quote__author {
+  text-transform: uppercase;
+  font-family: $font-roboto;
+  font-weight: 900;
+  font-size: 16px;
+  color: rgba(250, 250, 250, 0.9);
+}
+
+.quote__position {
+  font-family: $font-roboto;
+  font-weight: 300;
+  color: rgba(250, 250, 250, 0.5);
+  text-transform: uppercase;
+  font-size: 13px;
+  margin-bottom: 50px;
+}
+
+.quote__picture {
+  width: 45px;
+  height: auto;
+}
+
+.quote__picture--active {
+  width: 75px;
+  height: auto;
+}
