@@ -1,0 +1,18 @@
+.news__input {
+  width: 100%;
+  border: 1px solid #e5e5e5;
+  color: #e5e5e5;
+  font-family: $font-roboto;
+  font-weight: 300;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.news__input::placeholder {
+  color: #acabb1;
+  text-transform: capitalize;
+  font-family: $font-roboto;
+  font-size: 14px;
+}

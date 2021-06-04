@@ -59,8 +59,10 @@
           </p>
         </div>
       </div>
-      <div class="row text-center gx-2">
-        <a href="#" class="more btn mx-auto p-2">learn more</a>
+    </div>
+    <div class="container gx-2">
+      <div class="row justify-content-center gx-2">
+      <a class="btn more px-2">learn more</a>
       </div>
     </div>
   </header>
@@ -88,9 +90,9 @@
                 inceptos himenaeos.
               </span>
             </p>
-            <div class="container">
+            <div class="container w-100 px-0">
               <div class="row">
-                <div class="col-2">
+                <div>
                   <a class="more btn p-2">learn more</a>
                 </div>
               </div>
@@ -326,19 +328,21 @@
     </div>
   </section>
   <section class="solid news container-fluid px-0 mt-5">
-    <div class="container col-6">
-      <div class="row">
-        <div class="col text-center">
-          <h2 class="header-title">give us a good news</h2>
-          <form action="" class="news__form">
-            <input type="text" name="name" class="news__input">
-            <input type="email" name="email" class="news__input">
-            <input type="text" name="subject" class="news__input">
-            <textarea name="message" cols="30" rows="10"></textarea>
-            <button class="news__submit" type="submit">submit</button>
-          </form>
+    <div class="container gx-2">
+      <form action="" class="news__form">
+      <div class="row justify-content-center">
+        <div class="col-6 text-center">
+          <h2 class="header-title mb-4">give us a good news</h2>
+            <input type="text" name="name" class="news__input" placeholder="name">
+            <input type="email" name="email" class="news__input" placeholder="email">
+            <input type="text" name="subject" class="news__input" placeholder="subject">
+            <textarea class="news__input" name="message" cols="30" rows="10" placeholder="your message"></textarea>
+            <div class="row justify-content-center gx-2">
+            <button class="btn more px-2" type="submit">submit</button>
+            </div>
+          </div>
         </div>
-      </div>
+      </form>
     </div>
   </section>
   <footer class="bg footer">
