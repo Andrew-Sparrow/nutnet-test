@@ -1,0 +1,14 @@
+.help {
+  list-style: none;
+  padding-left: 0;
+}
+
+.help__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $color-grey;
+}
+
+.help__link:hover {
+  color: $color-white;
+}
