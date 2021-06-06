@@ -1,4 +1,17 @@
 .moto {
   font-size: 32px;
   font-weight: 900;
+  position: relative;
+}
+
+.moto::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -50%;
+  left: 47%;
+  width: 50px;
+  height: 1px;
+  background-color: $color-ocean;
+  float: right;
 }

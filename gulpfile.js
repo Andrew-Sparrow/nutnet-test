@@ -83,7 +83,7 @@ gulp.task('spritesmith', function () {
     imgName: 'sprite.png',
     cssName: 'sprite.css',
     algorithm: 'left-right',
-    padding: 20,
+    padding: 60,
     imgPath: '../img/sprite/sprite.png'
   }));
 
@@ -100,7 +100,6 @@ gulp.task('spritesmith', function () {
   return merge(imgStream, cssStream);
 });
 
-/*adds sprite to html*/
 gulp.task("html", function(){
   return gulp.src("source/*.html")
     .pipe(posthtml([
