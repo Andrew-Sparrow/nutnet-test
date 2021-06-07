@@ -1,9 +1,13 @@
 {
   "name": "ap-portfolio",
   "version": "1.0.0",
-  "description": "responsive portfolio website",
+  "description": "test nutnet",
   "main": "index.js",
   "homepage": "https://Andrew-Sparrow.github.io/nutnet-test",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Andrew-Sparrow/nutnet-test"
+  },
   "scripts": {
     "deploy": "gh-pages -d build"
   },
@@ -36,10 +40,13 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.2",
+    "bootstrap": "^5.0.1",
     "find-unused-sass-variables": "^3.1.0",
     "gh-pages": "^3.1.0",
     "gulp.spritesmith": "^6.12.1",
     "merge-stream": "^2.0.0",
-    "vinyl-buffer": "^1.0.1"
+    "vinyl-buffer": "^1.0.1",
+    "jquery": "^3.6.0",
+    "popper.js": "^1.16.1"
   }
 }
