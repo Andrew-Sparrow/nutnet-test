@@ -1,10 +1,11 @@
 .menu-nav__item {
   font-family: $font-roboto;
-  font-size: 13px;
+  font-size: 35px;
   font-weight: 900;
   text-decoration: none;
   text-transform: uppercase;
   color: $color-white;
+  text-align: center;
 }
 
 .menu-nav__item--active {
