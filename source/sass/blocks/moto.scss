@@ -6,12 +6,18 @@
 
 .moto::after {
   content: '';
-  display: block;
+  display: none;
   position: absolute;
   bottom: -50%;
   left: 47%;
   width: 50px;
   height: 1px;
-  background-color: $color-ocean;
   float: right;
+  background-color: $color-ocean;
+}
+
+@media (min-width: $tablet-width) {
+  .moto::after {
+    display: block;
+  }
 }
