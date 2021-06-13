@@ -1,9 +1,7 @@
 .works__projects {
-  display: flex;
-  width: 187px;
-  justify-content: space-between;
+  width: 315px;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 25px;
   color: #413d4b;
   font-family: $font-roboto;
 }
@@ -19,4 +17,11 @@
 
 .works__icon {
   align-self: center;
+}
+
+@media (min-width: $tablet-width) {
+  .works__projects {
+    width: 187px;
+    font-size: 14px;
+  }
 }
