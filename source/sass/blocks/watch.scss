@@ -1,6 +1,6 @@
 .watch {
   font-family: $font-roboto;
-  font-size: 16px;
+  font-size: 25px;
   font-weight: 900;
   padding-top: 200px;
   padding-bottom: 205px;
@@ -34,3 +34,10 @@
     color: $color-ocean;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .watch {
+    font-size: 16px;
+  }
+}
+
