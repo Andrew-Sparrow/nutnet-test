@@ -1,5 +1,5 @@
 .item__title {
-  font-size: 14px;
+  font-size: 25px;
   font-family: $font-roboto;
   font-weight: 900;
   text-transform: uppercase;
@@ -8,7 +8,7 @@
 
 .item__text {
   width: 256px;
-  font-size: 14px;
+  font-size: 30px;
   font-family: $font-roboto;
   font-weight: 300;
   text-align: center;
@@ -21,4 +21,14 @@
   align-items: center;
   height: 150px;
   background-repeat: no-repeat;
+}
+
+@media (min-width: $tablet-width) {
+  .item__title {
+    font-size: 14px;
+  }
+
+  .item__text {
+    font-size: 14px;
+  }
 }

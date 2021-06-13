@@ -1,4 +1,10 @@
 .header-caption {
-  font-size: 14px;
+  font-size: 25px;
   letter-spacing: 1.75px;
+}
+
+@media (min-width: $tablet-width) {
+  .header-caption {
+    font-size: 14px;
+  }
 }

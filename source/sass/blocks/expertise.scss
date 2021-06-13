@@ -3,11 +3,11 @@
 }
 
 .expertise__title {
-  font-size: 22px;
+  font-size: 40px;
 }
 
 .expertise__caption {
-  font-size: 14px;
+  font-size: 25px;
   position: relative;
 }
 
@@ -21,4 +21,16 @@
   height: 1px;
   background-color: #c6c4c9;
   float: right;
+}
+
+
+@media (min-width: $tablet-width) {
+  .expertise__title {
+    font-size: 22px;
+  }
+
+  .expertise__caption {
+    font-size: 14px;
+    position: relative;
+  }
 }

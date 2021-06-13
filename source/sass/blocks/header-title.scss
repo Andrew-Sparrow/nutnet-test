@@ -4,3 +4,9 @@
   text-transform: uppercase;
   letter-spacing: 1.5px;
 }
+
+@media (min-width: $tablet-width) {
+  .header-title {
+    font-size: 40px;
+  }
+}

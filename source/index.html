@@ -17,10 +17,10 @@
 
 <body>
   <header class="bg bg--header container-fluid px-0">
-    <div class="container gx-2">
-      <div class="top row flex-column align-items-center justify-content-between pt-3">
-        <div class="col-2 logo">
-          <div class="row flex-column align-items-center">
+    <div class="container gx-2 px-0">
+      <div class="top row flex-column pt-3">
+        <div class="col-2 logo align-self-center">
+          <div class="row flex-column">
             <div class="col">
               <img class="d-block m-auto" src="img/logo.png" alt="logo" aria-label="logo">
             </div>
@@ -111,8 +111,14 @@
   </section>
   <section class="solid solid--expertise pt-5 container-fluid px-0">
     <div class="expertise">
-      <h2 class="expertise__title text-center text-uppercase fw-bold">expertise</h2>
-      <p class="expertise__caption text-center">Lorem ipsum dolor sit amet proin gravida nibh vel velit</p>
+      <div class="container gx-2">
+        <div class="row">
+          <div class="col">
+            <h2 class="expertise__title text-center text-uppercase fw-bold">expertise</h2>
+            <p class="expertise__caption text-center">Lorem ipsum dolor sit amet proin gravida nibh vel velit</p>
+          </div>
+        </div>
+      </div>
       <div class="container gx-2">
         <div class="row">
           <div class="item col">
@@ -325,15 +331,15 @@
   <section class="solid news container-fluid px-0 mt-5 mb-5">
     <div class="container gx-2">
       <form action="" class="news__form">
-      <div class="row justify-content-center">
-        <div class="col-6 text-center">
-          <h2 class="header-title mb-4">give us a good news</h2>
+        <div class="row justify-content-center">
+          <div class="col-6 text-center">
+            <h2 class="header-title mb-4">give us a good news</h2>
             <input type="text" name="name" class="news__input" placeholder="name">
             <input type="email" name="email" class="news__input" placeholder="email">
             <input type="text" name="subject" class="news__input" placeholder="subject">
             <textarea class="news__input" name="message" cols="30" rows="10" placeholder="your message"></textarea>
             <div class="row justify-content-center gx-2">
-            <button class="btn more px-2" type="submit">submit</button>
+              <button class="btn more px-2" type="submit">submit</button>
             </div>
           </div>
         </div>
@@ -355,7 +361,8 @@
                 </div>
               </div>
             </div>
-            <p class="footer__text text-start mb-5">lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh elit.
+            <p class="footer__text text-start mb-5">lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis
+              sem nibh elit.
               Duis sed odio sit amet auctror a ornare odio non mauris vitae erat in elit</p>
           </div>
         </div>
@@ -403,22 +410,22 @@
         </div>
       </div>
       <div class="row justify-content-between px-0">
-          <div class="col-4">
-            <ul class="help d-flex justify-content-between">
-              <li class="help__item">
-                <a href="" class="help__link">help</a>
-              </li>
-              <li class="help__item">
-                <a href="" class="help__link">terms & condition</a>
-              </li>
-              <li class="help__item">
-                <a href="" class="help__link">privacy</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-3">
-            <small class="float-end">Copyright &copy; 2015 - Tajem Creative</small>
-          </div>
+        <div class="col-4">
+          <ul class="help d-flex justify-content-between">
+            <li class="help__item">
+              <a href="" class="help__link">help</a>
+            </li>
+            <li class="help__item">
+              <a href="" class="help__link">terms & condition</a>
+            </li>
+            <li class="help__item">
+              <a href="" class="help__link">privacy</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-3">
+          <small class="float-end">Copyright &copy; 2015 - Tajem Creative</small>
+        </div>
       </div>
     </div>
   </footer>
