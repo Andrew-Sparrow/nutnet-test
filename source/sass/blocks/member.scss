@@ -4,7 +4,7 @@
 
 .member__name {
   font-family: $font-roboto;
-  font-size: 14px;
+  font-size: 25px;
   text-transform: uppercase;
   font-weight: 900;
   letter-spacing: 1px;
@@ -13,7 +13,17 @@
 .member__position {
   font-family: $font-roboto;
   color: $color-grey;
-  font-size: 13px;
+  font-size: 20px;
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+
+@media (min-width: $tablet-width) {
+  .member__name {
+    font-size: 14px;
+  }
+
+  .member__position {
+    font-size: 13px;
+  }
 }

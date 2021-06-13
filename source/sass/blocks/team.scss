@@ -2,4 +2,11 @@
   color: $color-grey-2;
   font-weight: 300;
   font-family: $font-roboto;
+  font-size: 25px;
+}
+
+@media (min-width: $tablet-width) {
+  .team__appeal {
+    font-size: 20px;
+  }
 }
