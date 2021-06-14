@@ -6,5 +6,12 @@
     color: $color-logo;
     font-size: 30px;
     line-height: 1.2;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo__name {
+    margin-left: -18px;
   }
 }

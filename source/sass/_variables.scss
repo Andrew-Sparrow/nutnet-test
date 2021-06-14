@@ -18,6 +18,38 @@ $container-max-widths: (
 
 $grid-gutter-width: 1rem;
 
+$spacer: 1rem;
+
+$spacers: (
+  0: 0,
+  1: $spacer / 4,
+  2: $spacer / 2,
+  3: $spacer,
+  4: $spacer * 2,
+  5: $spacer * 3,
+);
+
+$grid-gutter-width: 1rem;
+
+$gutters: (
+  0: 0,
+  1: $spacer / 4,
+  2: $spacer / 2,
+  3: $spacer,
+  4: $spacer * 2,
+  5: $spacer * 3,
+);
+
 $phone-width: 576px;
 $tablet-width: 768px;
 $desktop-width: 992px;
+
+@mixin make-col($size: false, $columns: $grid-columns) {
+  @if $size {
+    flex: 0 0 auto;
+    width: $size / $columns;
+  } @else {
+    flex: 1 1 0;
+    max-width: 100%;
+  }
+}

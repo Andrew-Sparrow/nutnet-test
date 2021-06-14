@@ -3,3 +3,9 @@
   font-size: 30px;
   text-align: justify;
 }
+
+@media (min-width: $desktop-width) {
+  .description {
+    font-size: 14px;
+  }
+}

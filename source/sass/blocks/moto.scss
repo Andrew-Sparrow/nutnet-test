@@ -5,7 +5,7 @@
 }
 
 .moto::after {
-  content: '';
+  content: "";
   display: none;
   position: absolute;
   bottom: -50%;
@@ -17,7 +17,18 @@
 }
 
 @media (min-width: $tablet-width) {
+  .moto {
+    font-size: 32px;
+  }
+
   .moto::after {
     display: block;
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+  .moto {
+    font-size: 32px;
   }
 }

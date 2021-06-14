@@ -22,3 +22,9 @@
     margin-bottom: 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .menu-nav__item {
+      font-size: 13px;
+  }
+}
