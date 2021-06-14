@@ -5,19 +5,20 @@
 }
 
 .quote__text {
-  font-size: 16px;
+  font-size: 30px;
   line-height: 26px;
   margin-top: -50px;
   margin-bottom: 70px;
-  letter-spacing: 1.0px;
+  letter-spacing: 1px;
   color: rgba(250, 250, 250, 0.9);
+  text-align: justify;
 }
 
 .quote__author {
   text-transform: uppercase;
   font-family: $font-roboto;
   font-weight: 900;
-  font-size: 16px;
+  font-size: 30px;
   color: rgba(250, 250, 250, 0.9);
 }
 
@@ -26,7 +27,7 @@
   font-weight: 300;
   color: rgba(250, 250, 250, 0.5);
   text-transform: uppercase;
-  font-size: 13px;
+  font-size: 20px;
   margin-bottom: 50px;
 }
 
@@ -38,4 +39,19 @@
 .quote__picture--active {
   width: 75px;
   height: auto;
+}
+
+@media (min-width: $tablet-width) {
+  .quote__text {
+    font-size: 16px;
+    text-align: initial;
+  }
+
+  .quote__author {
+    font-size: 16px;
+  }
+
+  .quote__position {
+    font-size: 13px;
+  }
 }
