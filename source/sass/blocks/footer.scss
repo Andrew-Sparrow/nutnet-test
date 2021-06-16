@@ -1,14 +1,14 @@
 .footer {
   color: $color-grey;
   font-family: $font-roboto;
-  font-size: 14px;
+  font-size: 24px;
   line-height: 26px;
   font-weight: 300;
 }
 
 .footer__title {
   color: $color-white;
-  font-size: 15px;
+  font-size: 25px;
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 1.3px;
@@ -21,4 +21,14 @@
 
 .footer__text {
   letter-spacing: 0.2px;
+}
+
+@media (min-width: $desktop-width) {
+  .footer {
+    font-size: 14px;
+  }
+
+  .footer__address {
+    letter-spacing: 0.5px;
+  }
 }

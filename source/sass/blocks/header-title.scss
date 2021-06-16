@@ -5,8 +5,8 @@
   letter-spacing: 1.5px;
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
   .header-title {
-    font-size: 40px;
+    font-size: 22px;
   }
 }
