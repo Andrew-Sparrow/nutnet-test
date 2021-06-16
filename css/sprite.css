@@ -1,0 +1,114 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-brush {
+  background-image: url(../img/sprite/sprite.png);
+  background-position: -1172px 0px;
+  width: 50px;
+  height: 42px;
+}
+.icon-dribbble {
+  background-image: url(../img/sprite/sprite.png);
+  background-position: -392px 0px;
+  width: 35px;
+  height: 35px;
+}
+.icon-facebook {
+  background-image: url(../img/sprite/sprite.png);
+  background-position: -487px 0px;
+  width: 35px;
+  height: 35px;
+}
+.icon-game {
+  background-image: url(../img/sprite/sprite.png);
+  background-position: -962px 0px;
+  width: 41px;
+  height: 50px;
+}
+.icon-google {
+  background-image: url(../img/sprite/sprite.png);
+  background-position: -582px 0px;
+  width: 35px;
+  height: 35px;
+}
+.icon-heart {
+  background-image: url(../img/sprite/sprite.png);
+  background-position: -1282px 0px;
+  width: 50px;
+  height: 46px;
+}
+.icon-instagram {
+  background-image: url(../img/sprite/sprite.png);
+  background-position: -677px 0px;
+  width: 35px;
+  height: 35px;
+}
+.icon-mark {
+  background-image: url(../img/sprite/sprite.png);
+  background-position: -68px 0px;
+  width: 14px;
+  height: 19px;
+}
+.icon-mobile {
+  background-image: url(../img/sprite/sprite.png);
+  background-position: -304px 0px;
+  width: 28px;
+  height: 50px;
+}
+.icon-monitor {
+  background-image: url(../img/sprite/sprite.png);
+  background-position: -1063px 0px;
+  width: 49px;
+  height: 50px;
+}
+.icon-paper {
+  background-image: url(../img/sprite/sprite.png);
+  background-position: -219px 0px;
+  width: 25px;
+  height: 25px;
+}
+.icon-phone {
+  background-image: url(../img/sprite/sprite.png);
+  background-position: -142px 0px;
+  width: 17px;
+  height: 17px;
+}
+.icon-right {
+  background-image: url(../img/sprite/sprite.png);
+  background-position: 0px 0px;
+  width: 8px;
+  height: 13px;
+}
+.icon-search {
+  background-image: url(../img/sprite/sprite.png);
+  background-position: -1392px 0px;
+  width: 50px;
+  height: 50px;
+}
+.icon-twitter {
+  background-image: url(../img/sprite/sprite.png);
+  background-position: -772px 0px;
+  width: 35px;
+  height: 35px;
+}
+.icon-youtube {
+  background-image: url(../img/sprite/sprite.png);
+  background-position: -867px 0px;
+  width: 35px;
+  height: 35px;
+}
