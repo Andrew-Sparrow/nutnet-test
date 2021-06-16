@@ -7979,7 +7979,7 @@ img {
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 1.3px;
-  padding-bottom: 24px; }
+  padding-bottom: 22px; }
 
 .footer__address {
   letter-spacing: 0.5px; }
@@ -7990,6 +7990,8 @@ img {
 @media (min-width: 992px) {
   .footer {
     font-size: 14px; }
+  .footer__title {
+    font-size: 15px; }
   .footer__address {
     letter-spacing: 0.5px; } }
 
