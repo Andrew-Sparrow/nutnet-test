@@ -25,6 +25,16 @@
 
 @media (min-width: $tablet-width) {
   .item__title {
+    font-size: 20px;
+  }
+
+  .item__text {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .item__title {
     font-size: 14px;
   }
 

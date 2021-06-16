@@ -19,12 +19,13 @@
 
 @media (min-width: $tablet-width) {
   .menu-nav__item {
-    margin-bottom: 0;
+    margin-bottom: 15px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .menu-nav__item {
-      font-size: 13px;
+    font-size: 13px;
+    margin-bottom: 0;
   }
 }

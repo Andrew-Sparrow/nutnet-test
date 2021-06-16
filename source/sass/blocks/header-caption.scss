@@ -5,6 +5,12 @@
 
 @media (min-width: $tablet-width) {
   .header-caption {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header-caption {
     font-size: 14px;
   }
 }
