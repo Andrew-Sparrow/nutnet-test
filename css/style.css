@@ -7835,7 +7835,8 @@ img {
   .member__name {
     font-size: 14px; }
   .member__position {
-    font-size: 13px; } }
+    font-size: 13px;
+    margin-bottom: 0; } }
 
 .team__appeal {
   color: rgba(243, 243, 243, 0.7);
@@ -7930,12 +7931,17 @@ img {
 
 @media (min-width: 768px) {
   .quote__text {
-    font-size: 16px;
-    text-align: initial; }
+    font-size: 25px;
+    text-align: justify; }
   .quote__author {
     font-size: 16px; }
   .quote__position {
     font-size: 13px; } }
+
+@media (min-width: 992px) {
+  .quote__text {
+    text-align: center;
+    font-size: 16px; } }
 
 .news__input {
   width: 100%;
