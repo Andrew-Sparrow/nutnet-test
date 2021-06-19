@@ -43,8 +43,8 @@
 
 @media (min-width: $tablet-width) {
   .quote__text {
-    font-size: 16px;
-    text-align: initial;
+    font-size: 25px;
+    text-align: justify;
   }
 
   .quote__author {
@@ -53,5 +53,12 @@
 
   .quote__position {
     font-size: 13px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .quote__text {
+    text-align: center;
+    font-size: 16px;
   }
 }

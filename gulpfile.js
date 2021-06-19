@@ -104,8 +104,7 @@ gulp.task('spritesmith', function () {
 });
 
 gulp.task('pug', function(){
-  return gulp.src("source/pug/script.pug")
-    .pipe(rename("index.html"))
+  return gulp.src("source/pug/index.pug")
     .pipe(
       pug({})
     )
@@ -131,6 +130,11 @@ gulp.task("html", function(){
     .pipe(gulp.dest("build"));
 });
 
+gulp.task("refresh", function (done) {
+  server.reload();
+  done();
+});
+
 gulp.task("server", function () {
   server.init({
     server: "build/"
@@ -138,16 +142,12 @@ gulp.task("server", function () {
 
   gulp.watch("source/sass/**/*.scss",gulp.series("css","refresh"));
   gulp.watch("source/img/sprite/*.png", gulp.series("spritesmith","html","refresh"));
-  gulp.watch("source/*.html", gulp.series("html","refresh"));
+  // gulp.watch("source/*.html", gulp.series("html","refresh"));
   gulp.watch("source/img/**/*.{png,jpg,svg,webp}",gulp.series("copy","refresh"))
   gulp.watch("source/js/*.js", gulp.series("js","refresh"))
   gulp.watch("source/pug/*.pug", gulp.series("pug","refresh"))
 });
 
-gulp.task("refresh", function (done) {
-  server.reload();
-  done();
-});
 
 gulp.task("copy", function() {
   return gulp.src([
@@ -170,7 +170,7 @@ gulp.task("build", gulp.series(
   "spritesmith",
   "pug",
   "js",
-  "html",
+  // "html",
   "refresh"
 ));
 
