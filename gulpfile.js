@@ -9,6 +9,7 @@ var sass = require("gulp-sass");
 var spritesmith = require('gulp.spritesmith');
 var merge = require('merge-stream');
 var buffer = require('vinyl-buffer');
+const pug = require('gulp-pug');
 
 sass.compiler = require('node-sass');
 
@@ -26,6 +27,8 @@ var posthtml = require("gulp-posthtml");
 var del = require("del");
 var include = require("posthtml-include");
 var bem_validate = require("bem-validate");
+
+var rename = require("gulp-rename");
 
 gulp.task("unused", function() {
   console.log(unused.unused);
@@ -100,8 +103,28 @@ gulp.task('spritesmith', function () {
   return merge(imgStream, cssStream);
 });
 
+gulp.task('pug', function(){
+  return gulp.src("source/pug/script.pug")
+    .pipe(rename("index.html"))
+    .pipe(
+      pug({})
+    )
+    .pipe(gulp.dest('build/'));
+})
+
+gulp.task('js', function () {
+  return gulp.src([
+    "source/js/*.js",
+    "!source/js/include-html.js"
+  ])
+    .pipe(gulp.dest('build/js/'));
+})
+
 gulp.task("html", function(){
-  return gulp.src("source/*.html")
+  return gulp.src([
+    "source/*.html",
+    '!source/source.html',
+  ])
     .pipe(posthtml([
       include()
     ]))
@@ -116,8 +139,9 @@ gulp.task("server", function () {
   gulp.watch("source/sass/**/*.scss",gulp.series("css","refresh"));
   gulp.watch("source/img/sprite/*.png", gulp.series("spritesmith","html","refresh"));
   gulp.watch("source/*.html", gulp.series("html","refresh"));
-// watches if new images were added from source/img
   gulp.watch("source/img/**/*.{png,jpg,svg,webp}",gulp.series("copy","refresh"))
+  gulp.watch("source/js/*.js", gulp.series("js","refresh"))
+  gulp.watch("source/pug/*.pug", gulp.series("pug","refresh"))
 });
 
 gulp.task("refresh", function (done) {
@@ -130,8 +154,9 @@ gulp.task("copy", function() {
     "source/img/**/*.{png,jpg,jpeg,svg,webp,ico}",
     '!source/img/sprite/',
     '!source/img/sprite/**',
-    "source/js/**/*.js",
+    '!source/pug',
     "source/fonts/**/*.{woff,woff2}",
+    "source/js/*.js",
   ],{
     base: "source"
   })
@@ -143,6 +168,8 @@ gulp.task("build", gulp.series(
   "copy",
   "css",
   "spritesmith",
+  "pug",
+  "js",
   "html",
   "refresh"
 ));
