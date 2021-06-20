@@ -1,0 +1,90 @@
+// code from https://codepen.io/captain_yar/details/OJMEmGw
+
+.popup {
+  position: fixed;
+  left: 0;
+  top: 100px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+  z-index: 100;
+}
+
+.popup__show {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.popup__content {
+  position: relative;
+  max-width: 50em;
+  margin: 0 auto;
+  display: block;
+  padding: 0 3%;
+  height: auto;
+  z-index: 10;
+  top: 50%;
+  transform:
+    translateY(-50%);
+  /*left: 50%;*/
+}
+
+.popup__container {
+  padding-bottom: 56.25%;
+  position: relative;
+  overflow: hidden;
+  height: 0;
+  /*border: 2px #FFF solid;*/
+  box-shadow: 0 0 15px #333;
+}
+
+.popup__container iframe,
+.popup__container object,
+.popup__container embed {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.close-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -20px;
+  right: 35px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 100%;
+  border: 1px #fff solid;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  background-color: #70d0d0;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  z-index: 101;
+  transition: all 0.3s ease;
+}
+
+.-webkit-.touchevents .close-modal {
+  line-height: 0.5;
+}
+
+.close-modal svg {
+  width: 100%;
+}
+
+.close-modal:hover {
+  opacity: 0.8;
+  color: #fff;
+}
+

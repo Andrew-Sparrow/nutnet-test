@@ -63,7 +63,7 @@ html(lang="en")
                       .col
                         a.btn.more.px-2.col-lg-4 learn more
   section.bg.watch.bg--watch.container-fluid.text-center.px-0
-    a.watch__play.container.mb-4(href="#")
+    a.watch__play.container.mb-4(href="#" id="myBtn")
       svg.watch__icon#Layer_1(width="100" height="100" version="1.1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" space="preserve")
         ellipse.st0(cx="49.94" cy="50.09" rx="48.34" ry="48.51")
         path.st0(d="M36.58,69.25l0.11-38.8c0-0.77,0.83-1.25,1.48-0.86l31.07,18.9c0.63,0.38,0.64,1.31,0.02,1.71L38.08,70.1C37.42,70.52,36.58,70.04,36.58,69.25z")
@@ -159,8 +159,8 @@ html(lang="en")
           blockquote.quote__text This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit.
       .row
         .col-10.mx-auto
-            p.quote__author jane galadriel
-            p.quote__position ceo tengkurep
+          p.quote__author jane galadriel
+          p.quote__position ceo tengkurep
       .row
         .col-10.col-md-6.col-lg-4.mx-auto.d-flex.justify-content-between.align-items-center
           input(type='button' class='quote__picture quote__picture--1' aria-label="author")
@@ -232,4 +232,16 @@ html(lang="en")
               a.help__link(href) privacy
         .col-10.col-lg-3
           small.float-end Copyright © 2015 - Tajem Creative
+
+          <div class="container">
+
+  .video-popup.popup
+    .popup__content
+      span.close-modal
+        svg(xmlns="http://www.w3.org/2000/svg", viewBox="0 0 36 36")
+          path(d="M28.5 9.6l-2.1-2.1-8.4 8.4-8.4-8.4-2.1 2.1 8.4 8.4-8.4 8.4 2.1 2.1 8.4-8.4 8.4 8.4 2.1-2.1-8.4-8.4z", style="fill: #FFF;")
+      .popup__container
+        #player(data-id="DGIXT7ce3vQ")
+
+  script(src='../js/show-popup.js')
   script(src='../js/switch-comments.js')

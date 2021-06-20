@@ -141,7 +141,7 @@ gulp.task("server", function () {
   gulp.watch("source/sass/**/*.scss",gulp.series("css","refresh"));
   gulp.watch("source/img/sprite/*.png", gulp.series("spritesmith","html","refresh"));
   gulp.watch("source/img/**/*.{png,jpg,svg,webp}",gulp.series("clean", "copy","refresh"))
-  gulp.watch("source/js/*.js", gulp.series("clean","js","refresh"))
+  gulp.watch("source/js/*.js", gulp.series("js","refresh"))
   gulp.watch("source/pug/*.pug", gulp.series("pug","refresh"))
 });
 
