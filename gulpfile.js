@@ -32,9 +32,7 @@ var rename = require("gulp-rename");
 
 gulp.task("unused", function() {
   console.log(unused.unused);
-  // ['$foo', '$bar', '$imunused']
   console.log(unused.total);
-// Total number of variables in the files
 })
 
 gulp.task("clean", function () {
@@ -142,9 +140,8 @@ gulp.task("server", function () {
 
   gulp.watch("source/sass/**/*.scss",gulp.series("css","refresh"));
   gulp.watch("source/img/sprite/*.png", gulp.series("spritesmith","html","refresh"));
-  // gulp.watch("source/*.html", gulp.series("html","refresh"));
-  gulp.watch("source/img/**/*.{png,jpg,svg,webp}",gulp.series("copy","refresh"))
-  gulp.watch("source/js/*.js", gulp.series("js","refresh"))
+  gulp.watch("source/img/**/*.{png,jpg,svg,webp}",gulp.series("clean", "copy","refresh"))
+  gulp.watch("source/js/*.js", gulp.series("clean","js","refresh"))
   gulp.watch("source/pug/*.pug", gulp.series("pug","refresh"))
 });
 
@@ -170,7 +167,6 @@ gulp.task("build", gulp.series(
   "spritesmith",
   "pug",
   "js",
-  // "html",
   "refresh"
 ));
 
