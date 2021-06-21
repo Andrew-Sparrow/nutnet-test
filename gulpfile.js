@@ -104,7 +104,9 @@ gulp.task('spritesmith', function () {
 gulp.task('pug', function(){
   return gulp.src("source/pug/index.pug")
     .pipe(
-      pug({})
+      pug({
+        pretty: true
+      })
     )
     .pipe(gulp.dest('build/'));
 })
