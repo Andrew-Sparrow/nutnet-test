@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "test nutnet",
   "main": "index.js",
-  "homepage": "https://Andrew-Sparrow.github.io/nutnet-test",
+  "homepage": "https://Andrew-Sparrow.github.io/nutnet",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Andrew-Sparrow/nutnet-test"
+    "url": "git+https://github.com/Andrew-Sparrow/nutnet"
   },
   "scripts": {
     "deploy": "gh-pages -d build"
