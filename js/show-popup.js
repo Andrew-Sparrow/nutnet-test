@@ -30,11 +30,12 @@ window.addEventListener("scroll", function () {
 
 // ==== Variables for popup
 var modal = document.querySelector(".popup"),
-  close = document.querySelector(".close-modal"),
+  close = document.querySelector(".popup__close"),
   root = document.getElementsByTagName("html")[0];
 
 // Do stuff when player is ready
 function onPlayerReady(event) {
+  window.scrollY = 1000;
   document.querySelector(".watch__play").addEventListener("click", function () {
     modal.classList.add("popup__show");
     // Play video
@@ -45,9 +46,7 @@ function onPlayerReady(event) {
 
   function closePopup() {
     modal.classList.remove("popup__show");
-    root.classList.remove("no-scroll");
-    window.scrollY = scrollPosition;
-    console.log(scrollPosition);
+    window.scrollTo(0, 1000);
 
     event.target.pauseVideo();
   }
@@ -70,9 +69,6 @@ function onPlayerReady(event) {
 
   // Close if close button is clicked
   close.addEventListener("click", function () {
-    modal.classList.remove("popup__show");
-    root.classList.remove("no-scroll");
-    window.scrollY = scrollPosition;
-    event.target.pauseVideo();
+    closePopup();
   });
 }
