@@ -9,7 +9,7 @@
     "url": "git+https://github.com/Andrew-Sparrow/nutnet-test"
   },
   "scripts": {
-    "deploy": "gh-pages -d build/"
+    "deploy": "gh-pages -d build"
   },
   "author": "Andrew Pecherskih",
   "license": "MIT",
