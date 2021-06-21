@@ -47,22 +47,23 @@ function onPlayerReady(event) {
     modal.classList.remove("popup__show");
     root.classList.remove("no-scroll");
     window.scrollY = scrollPosition;
+    console.log(scrollPosition);
 
     event.target.pauseVideo();
   }
 
   // Close if outside box is clicked
-  window.addEventListener("click", function (e) {
-    if (e.target === modal) {
+  window.addEventListener("click", function (evt) {
+    if (evt.target === modal) {
       closePopup();
     }
   });
 
-  window.document.onkeydown = function (e) {
-    if (!e) {
-      e = event;
+  window.document.onkeydown = function (evt) {
+    if (!evt) {
+      evt = event;
     }
-    if (e.key === "Escape") {
+    if (evt.key === "Escape") {
       closePopup();
     }
   }
