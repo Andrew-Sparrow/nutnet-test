@@ -7892,6 +7892,9 @@ img {
     width: 187px;
     font-size: 14px; } }
 
+.quote .container {
+  min-height: 810px; }
+
 .quote__sign {
   font-size: 100px;
   font-family: "Playfair Display", serif;
@@ -7954,6 +7957,8 @@ img {
   height: 75px; }
 
 @media (min-width: 768px) {
+  .quote .container {
+    min-height: 610px; }
   .quote__text {
     font-size: 25px;
     text-align: justify; }
