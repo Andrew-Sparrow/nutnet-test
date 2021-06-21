@@ -7935,19 +7935,19 @@ img {
   border: 2px solid #eece1a; }
 
 .quote__picture--1 {
-  background-image: url("../../img/author-1.png"); }
+  background-image: url("../img/author-1.png"); }
 
 .quote__picture--2 {
-  background-image: url("../../img/author-2.png"); }
+  background-image: url("../img/author-2.png"); }
 
 .quote__picture--3 {
-  background-image: url("../../img/author-3.png"); }
+  background-image: url("../img/author-3.png"); }
 
 .quote__picture--4 {
-  background-image: url("../../img/author-4.png"); }
+  background-image: url("../img/author-4.png"); }
 
 .quote__picture--5 {
-  background-image: url("../../img/author-5.png"); }
+  background-image: url("../img/author-5.png"); }
 
 .quote__picture--active {
   width: 75px;
